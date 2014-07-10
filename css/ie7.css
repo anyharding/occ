@@ -1,0 +1,13 @@
+/* CSS Document */
+.contant{ background:#FFFFFF; padding-bottom:10px; width:1002px; float:left;    padding-top: 35px;}
+.text_feild {
+    border: 1px solid #86000F;
+    height: 22px;
+    width: 480px;
+	padding-top:8px;
+}
+
+.textbg {
+    float: left;
+    margin: 20px 0 0 20px;
+}

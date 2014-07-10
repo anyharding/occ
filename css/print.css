@@ -1,0 +1,184 @@
+<style type="text/css">
+    .invoce_matter_bg
+    {clear:both; padding:0px 0 0 0;}
+    .company_struchers
+    {margin:0 0 0 0;}
+    .company_contents_left
+    {width:340px; float:left; margin:0 0 0 20px;}
+    .comp_add
+    { color:#000; line-height:20px; word-wrap: break-word; width:155px;}
+    .comp_add_right
+    { color:#000; line-height:20px; word-wrap: break-word;  width:155px; text-align:left; float:right; margin:-76px 0 0 182px;}
+
+    .comp_add_right_ship
+    { color:#000; line-height:20px; word-wrap: break-word; text-align:left; width:155px; float:right; margin:10px 0 10px 0;}
+    .comp_step_tow
+    {color:#000; line-height:20px; margin:10px 0 0 46px; font-weight:normal; word-wrap: break-word;}
+    .company_contents_right
+    {width:160px; float:left; }
+    .invoce_matter_bg_first
+    { margin:20px 0 0 0; clear:both;}
+
+    .table {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-collapse: collapse;
+        border-color: #DDDDDD #DDDDDD -moz-use-text-color;
+        border-image: none;
+        border-style: solid solid none;
+        border-width: 1px 1px medium;
+        display: table;
+        width: 100%;
+    }
+
+
+    .table .table-row-heading {
+        display: table-row; border:1px solid #ddd;
+    }
+
+    .table .table-row-heading .th {
+        background: none repeat scroll 0 0 #549fc6;
+        border-bottom: 1px solid #DDDDDD;
+        border-right: 1px solid #DDDDDD;
+        color: #FFFFFF;
+        display: table-cell;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 5px;
+        text-align: left;
+        vertical-align: baseline;
+    }
+
+
+    .table .spacer {
+        display: block;
+    }
+
+    .table .table-row {
+        display: table-row;
+    }
+
+    .table .table-row .td {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border-bottom: 1px solid #DDDDDD;
+        border-right: 1px solid #DDDDDD;
+        color: #000000;
+        display: table-cell;
+        font-size: 12px;
+        padding: 4px;
+        text-align: left;
+        vertical-align: top;
+    }
+    .list_table .alt .td {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border-bottom: 1px solid #DDDDDD;
+        border-right: 1px solid #DDDDDD;
+        color: #000000;
+        display: table-cell;
+        font-size: 12px;
+        padding: 4px;
+        text-align: left;
+        vertical-align: top;
+    }
+    .last{
+        height:200px;
+    }
+
+    .list_table .alt .width5{ width:6%;}
+    .list_table .alt .width10{ width:10%;}
+    .list_table .alt .width15{ width:15%;}
+    .list_table .alt .width20{ width:20%;}
+    .list_table .alt .width25{ width:25%;}
+    .list_table .alt .width30{ width:30%;}
+    .list_table .alt .width35{ width:35%;}
+    .list_table .alt .first{ border-left:1px solid #DDDDDD;}
+    .wd_inn1{ float:left; width:25px;}
+    .wd_inn2{ float:left; width:25px; }
+    .wd_inn3{ float:left; width:180px; }
+    .wd_inn4{ float:left; width:68px; }
+    .wd_inn5{ float:left; width:25px; }
+    .wd_inn6{ float:left; width:25px;}
+    .wd_inn7{ float:left; width:25px; }
+    .wd_inn8{ float:left; width:25px;}
+
+    .cwd_inn1{ float:left; width:25px;word-wrap: break-word;}
+    .cwd_inn2{ float:left; width:25px;word-wrap: break-word; }
+    .cwd_inn3{ float:left; width:180px;word-wrap: break-word; }
+    .cwd_inn4{ float:left; width:68px;word-wrap: break-word; }
+    .cwd_inn5{ float:left; width:25px;word-wrap: break-word; }
+    .cwd_inn6{ float:left; width:25px;word-wrap: break-word;}
+    .cwd_inn7{ float:left; width:55px;word-wrap: break-word; }
+    .cwd_inn8{ float:left; width:25px;word-wrap: break-word;}
+
+    .list_table_2 .alt_one .td {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border-bottom: 1px solid #DDDDDD;
+        border-right: 1px solid #DDDDDD;
+        color: #000000;
+        display: table-cell;
+        font-size: 12px;
+        padding: 4px;
+        text-align: left;
+        vertical-align: top;
+    }
+    .list_table_2 .alt_one .first{ border-left:1px solid #DDDDDD;}
+    .list_table_2 .alt_one .width5{ width:1%;}
+    .list_table_2 .alt_one .width10{ width:4%;}
+    .list_table_2 .alt_one .width15{ width:15%;}
+    .list_table_2 .alt_one .width20{ width:20%;}
+    .list_table_2 .alt_one .width25{ width:25%;}
+    .list_table_2 .alt_one .width30{ width:1%;}
+    .list_table_2 .alt_one .width35{ width:35%;}
+
+    .lwd_inn1{ float:left; width:102px;word-wrap: break-word; }
+    .lwd_inn2{ float:left; width:25px;word-wrap: break-word; }
+    .lwd_inn3{ float:left; width:45px; word-wrap: break-word;}
+    .lwd_inn4{ float:left; width:38px; word-wrap: break-word;}
+    .lwd_inn5{ float:left; width:42px;word-wrap: break-word; }
+    .lwd_inn6{ float:left; width:63px;word-wrap: break-word;}
+    .lwd_inn7{ float:left; width:178px;word-wrap: break-word; }
+    .lwd_inn8{ float:left; width:89px;word-wrap: break-word;}
+    .list_table{  border:0px solid;}
+    .list_table_3 .alt_three .td {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border-bottom: 1px solid #DDDDDD;
+        border-right: 1px solid #DDDDDD;
+        color: #000000;
+        display: table-cell;
+        font-size: 12px;
+        padding: 4px;
+        text-align: left;
+        vertical-align: top;
+    }
+    .list_table_3 .alt_three .first{ border-left:1px solid #DDDDDD;}
+    .list_table_3 .alt_three .width5{ width:1%;}
+    .list_table_3 .alt_three .width10{ width:4%;}
+    .list_table_3 .alt_three .width15{ width:15%;}
+    .list_table_3 .alt_three .width20{ width:20%;}
+    .list_table_3 .alt_three .width25{ width:25%;}
+    .list_table_3 .alt_three .width30{ width:1%;}
+    .list_table_3 .alt_three .width35{ width:35%;}
+
+    .bwd_inn1{ float:left; width:209px;word-wrap: break-word; }
+    .bwd_inn2{ float:left; width:25px;word-wrap: break-word; }
+    .bwd_inn3{ float:left; width:88px;word-wrap: break-word; }
+    .bwd_inn4{ float:left; width:112px;word-wrap: break-word; }
+    .bwd_inn5{ float:left; width:25px;word-wrap: break-word; }
+    .bwd_inn6{ float:left; width:25px;word-wrap: break-word;}
+    .bwd_inn7{ float:left; width:178px;word-wrap: break-word; }
+    .bwd_inn8{ float:left; width:89px;word-wrap: break-word;}
+    .login_button_3 .input_submit {
+        background: url("<?php echo HTTP_PATH; ?>/img/submit_btn_1.png") no-repeat scroll 0 0 transparent;
+        border: medium none;
+        color: #FFFFFF;
+        cursor: pointer;
+        float: right;
+        font-size: 20px;
+        height: 40px;
+        width: 120px;
+        margin:5px 0 0 0;
+    }
+
+</style>

@@ -1,0 +1,47 @@
+/* CSS Document */
+#content{     background: #FFFFFF;
+    float: left;
+    padding: 2px 5px 5px;
+    width: 985px;}
+.cont_three_box {
+    border: 0 solid;
+    float: left;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    width: 977px;
+}
+.cont_box1{   background: none repeat scroll 0 0 #FFFFFF;
+    border: 0 solid;
+    box-shadow: 0 0 2px #CCCCCC;
+    float: left;
+    margin-left: 16px;  padding-top: 10px;
+    margin-right: 1px;
+    min-height:175px;  text-align: center;
+    width: 299px !important; 
+    -moz-box-shadow: 0 0 2px #CCCCCC;
+    -webkit-box-shadow:0 0 2px #CCCCCC;
+    box-shadow: 0 0 2px #CCCCCC;
+
+  }
+.thumb_img{
+    float: left;
+    height: 145px;
+    margin-left: 4px;
+   width: 290px;
+}
+.ribbon-content_reg {
+    background: none repeat scroll 0 0 #FF6E01;
+    float: left;
+    margin: 3px 5px;
+    padding-top: 0;
+    text-align: center;
+    width: 258px !important;
+}
+.left-name2{ float:left; width:980px; border:0px solid #666; text-align:left;}
+.footer{ float:left; width:985px; color:#adadad; padding-bottom: 60px; }
+.left_footer p{ float:left; color:#adadad; font:12px Arial, Helvetica, sans-serif; margin:15px 0 0 5px; }
+.left_footer p a{ color:#adadad; font:12px Arial, Helvetica, sans-serif; margin:0 3px 0 3px; text-decoration:none; }
+.left_footer p a:hover{ color:#adadad; font:12px Arial, Helvetica, sans-serif; text-decoration:underline; margin:0 3px 0 3px; }.footer div{ float:left; width:32%;}
+
+.all_bg{ filter:alpha(opacity=50);}
+.load-image{ filter:alpha(opacity=50);}
