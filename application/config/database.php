@@ -51,15 +51,10 @@ if (!defined('BASEPATH'))
 $active_group = 'default';
 $active_record = TRUE;
 
-// $db['default']['hostname'] = 'mysql-5.lhgroup.net.au';
-// $db['default']['username'] = 'mylhg1000';
-// $db['default']['password'] = 'm9XPovUB';
-// $db['default']['database'] = 'lhg_lhgroup_net_au';
-
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '123456';
-$db['default']['database'] = 'occ';
+$db['default']['hostname'] = 'mysql-5.lhgroup.net.au';
+$db['default']['username'] = 'mylhg1000';
+$db['default']['password'] = 'm9XPovUB';
+$db['default']['database'] = 'lhg_lhgroup_net_au';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = 'emp_';
 $db['default']['pconnect'] = TRUE;
