@@ -356,13 +356,14 @@ ORDER BY `id` desc ";
         $query = $this->db->get('banks');
         $houses = $query->result_array();
         $new = array();
-        $new[''] = 'Select Bank';
+        //$new[''] = 'Select Bank';
         for ($i = 0; $i < count($houses); $i++) {
             $key = $houses[$i]['id'];
             $value = $houses[$i]['name'];
             $new[$key] = $value;
         }
 		asort($new);
+		array_unshift($new, 'Select Bank');
         return $new;
     }
 
