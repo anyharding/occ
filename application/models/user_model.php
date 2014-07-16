@@ -362,6 +362,7 @@ ORDER BY `id` desc ";
             $value = $houses[$i]['name'];
             $new[$key] = $value;
         }
+		asort($new);
         return $new;
     }
 

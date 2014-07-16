@@ -1,3 +1,4 @@
+
 <?php
 if ($this->uri->segment(2) == 'myProfile') {
     $class = array('class' => 'active');
@@ -7,6 +8,7 @@ if ($this->uri->segment(2) == 'myProfile') {
 
 if ($this->uri->segment(2) == 'editProfile') {
     $class1 = array('class' => 'active');
+
 } else {
     $class1 = NULL;
 }
@@ -22,6 +24,7 @@ if ($this->uri->segment(1) == 'houses' and $this->uri->segment(2) <> 'addHouse')
 } else {
     $class3 = NULL;
 }
+
 if ($this->uri->segment(1) == 'houses' and $this->uri->segment(2) == 'addHouse') {
     $class11 = array('class' => 'active');
 } else {
@@ -109,6 +112,8 @@ if ($this->uri->segment(1) == 'carManage' and ($this->uri->segment(2) == 'index'
 }
 if ($this->uri->segment(2) == 'addCar') {
     $class18 = array('class' => 'active');
+    
+   
 } else {
     $class18 = NULL;
 }
@@ -216,14 +221,13 @@ if ($user_detail['role'] == 2) {
     ?>
     
 	<script type="text/javascript" src="<?php echo HTTP_PATH; ?>js/bootstrap.min.js"></script>
-	<link href="<?php echo HTTP_PATH; ?>css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <div class="sideCol">
         <div class="manag_acnt_tp_btm power_mode_sidebar" id="left_nav">
-            <!--<div class="manag_acnt_tp"><h2>MANAGE  MENU</h2></div>-->
+            <div class="manag_acnt_tp"><h2>MANAGE  MENU</h2></div>
             <ul>
                 <!--<li> <img alt="" src="<?php echo HTTP_PATH; ?>img/profile-detail.png"><?php echo anchor('/welcome', 'Profile Detail', $class); ?></li>-->
-                <li>
-                	<a href="#contractor" class="nav-header collapsed menu-first" data-toggle="collapse">Contractor</a>
+                <li >
+                	<a id="contractor_menu" href="#contractor" class="nav-header collapsed menu-first" data-toggle="collapse">Contractor</a>
 	                <ul id="contractor" class="nav collapse">
 		                <li> <img  alt="" src="<?php echo HTTP_PATH; ?>img/list_emp.png"><?php echo anchor('users', 'List Contractors', $class8) ?> </li>
 		                <li> <img width="16" height="16" alt="" src="<?php echo HTTP_PATH; ?>img/my_account_icon.png"><?php echo anchor('users/addUser', 'Add Contractors', $class9) ?></li>
@@ -238,16 +242,11 @@ if ($user_detail['role'] == 2) {
               	</li>
               	
               	<li>
-              		<a href="#house_and_rent" class="menu-first nav-header collapsed" data-toggle="collapse">House and Rent</a>
+              		<a id="house_and_rent_menu" href="#house_and_rent" class="menu-first nav-header collapsed" data-toggle="collapse">House and Rent</a>
 	              	<ul id="house_and_rent" class="nav collapse">
-		                <li> <img  alt="" src="<?php echo HTTP_PATH; ?>img/powerusers.png"><?php echo anchor('users/listHR', 'List HR Staff', $class6) ?> </li>
 		                <!--li> <img width="16" height="16" alt="" src="<?php echo HTTP_PATH; ?>img/add_hr.png"><?php echo anchor('users/addHRRecr', 'Add HR Staff', $class7) ?></li-->
 		                <li> <img alt="" src="<?php echo HTTP_PATH; ?>img/list_house.png"><?php echo anchor('houses', 'List Houses', $class3) ?> </li>
 		                <li> <img alt="" src="<?php echo HTTP_PATH; ?>img/house.png"><?php echo anchor('houses/addHouse', 'Add House', $class11) ?></li>
-		                <li> <img alt="" src="<?php echo HTTP_PATH; ?>img/list_households.png"><?php echo anchor('household', 'List Household Items', $class4) ?> </li>
-		                <li> <img alt="" src="<?php echo HTTP_PATH; ?>img/add_household.png"><?php echo anchor('household/addHousehold', 'Add Household', $class13) ?></li>
-		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/worksite.png" height="16"><?php echo anchor('worksite', 'List Worksites', $class5) ?></li>
-		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/add_worksite.png" height="16"><?php echo anchor('worksite/addWorksite', 'Add Worksites', $class12) ?></li>
 		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/rent.png" height="16" width="16"><?php echo anchor('rent', 'List Rent Payment', $class16) ?></li>
 		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/add_rent.png" height="16"><?php echo anchor('rent/addRent', 'Add Rent Payment', $class15) ?></li>
 		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/rent.png" height="16" width="16"><?php echo anchor('rent/batchPayments', 'Rent batch payments', $batchPayments) ?></li>
@@ -255,16 +254,18 @@ if ($user_detail['role'] == 2) {
                 </li>
                 
                 <li>
-                	<a href="#car_and_house_hold" class="menu-first nav-header collapsed" data-toggle="collapse">Car and House hold</a>
+                	<a href="#car_and_house_hold" id="car_and_house_hold_menu" class="menu-first nav-header collapsed" data-toggle="collapse">Car and House hold</a>
 	                <ul id="car_and_house_hold" class="nav collapse">
 		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/car.png" height="16" width="16"><?php echo anchor('carManage', 'Car Management', $class17) ?></li>
 		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/add_car.png" height="16"><?php echo anchor('carManage/addCar', 'Add Car', $class18) ?></li>
+                                <li> <img alt="" src="<?php echo HTTP_PATH; ?>img/list_households.png"><?php echo anchor('household', 'List Household Items', $class4) ?> </li>
+		                <li> <img alt="" src="<?php echo HTTP_PATH; ?>img/add_household.png"><?php echo anchor('household/addHousehold', 'Add Household', $class13) ?></li>
 	                </ul>
 	           </li>
                 
                 <li>
-                	<a href="#fiance" data-toggle="collapse" class="menu-first nav-header collapsed">Fiance</a>
-					<ul id="fiance" class="nav collapse">
+                	<a id="finance_menu" href="#finance" data-toggle="collapse" class="menu-first nav-header collapsed">Payment and Invoice</a>
+					<ul id="finance" class="nav collapse">
 		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/payment_manage.png" height="16"><?php echo anchor('payment', 'List Batch Payments', $class19) ?></li>
 		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/money.png" height="16" width="16"><?php echo anchor('payment/batchPayment', 'New Batch Payments', $class20) ?></li>
 		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/invoice.png" height="16"><?php echo anchor('invoice/generateInvoice', 'Generate Invoice', $generateInvoice) ?></li>
@@ -273,12 +274,15 @@ if ($user_detail['role'] == 2) {
                 </li>
                 
                 <li>
-                	<a href="#admin" data-toggle="collapse" class="menu-first nav-header collapsed">Administration</a>
+                	<a id="admin_menu" href="#admin" data-toggle="collapse" class="menu-first nav-header collapsed">Administration</a>
 	                <ul id="admin" class="nav collapse">
+                            	<li><img alt="" src="<?php echo HTTP_PATH; ?>img/powerusers.png"><?php echo anchor('users/listHR', 'List HR Staff', $class6) ?> </li>
 		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/comp.png" height="16"><?php echo anchor('company', 'List Companies', $company) ?></li>
 		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/add_comp.png" height="16"><?php echo anchor('company/addCompany', 'Add Company', $add_company) ?></li>
 		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/listpay.png" height="16"><?php echo anchor('paycompany', 'List Pay Companies', $paycompany) ?></li>
 		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/addpay.png" height="16"><?php echo anchor('paycompany/addCompany', 'Add Pay Company', $add_paycompany) ?></li>
+                                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/worksite.png" height="16" width="16"><?php echo anchor('worksite', 'List Worksites', $class5) ?></li>
+		                <li><img alt="" src="<?php echo HTTP_PATH; ?>img/add_worksite.png" height="16"><?php echo anchor('worksite/addWorksite', 'Add Worksites', $class12) ?></li>
 	                </ul>
                 </li>
                 
@@ -291,4 +295,38 @@ if ($user_detail['role'] == 2) {
     </div>
     <?php
 }
+?>
+        
+
+<?php
+
+if (($this->uri->segment(1) == 'users' || $this->uri->segment(2) == 'visaExpiryCheck' ||$this->uri->segment(1) == 'probation') && $this->uri->segment(2) != 'listHR'  ) {
+  $openMenu = '#contractor_menu';
+}
+else if($this->uri->segment(1) == 'houses'|| $this->uri->segment(1) == 'rent' )
+{
+  $openMenu = '#house_and_rent_menu';   
+}
+else if($this->uri->segment(1) == 'household' || $this->uri->segment(1) == 'carManage'  )
+{
+  $openMenu = '#car_and_house_hold_menu';   
+}
+else if($this->uri->segment(1) == 'payment' || $this->uri->segment(1) == 'invoice')
+{
+ $openMenu = '#finance_menu'; 
+}
+else if($this->uri->segment(2) == 'listHR' || $this->uri->segment(1) == 'company' ||$this->uri->segment(1) == 'paycompany'  || $this->uri->segment(1) == 'worksite'  )
+{
+ $openMenu = '#admin_menu'; 
+}
+
+
+echo"<script language='javascript'>
+  $('$openMenu').click();
+</script>
+";
+
+
+
+
 ?>
